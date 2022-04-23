@@ -2,6 +2,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import Image from 'next/image';
 
 const name = "Arthur Lozano";
 
@@ -18,7 +19,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
+            <Image
               src="/images/headerImage.jpg"
               alt={name}
               className={styles.headerImage}
@@ -29,7 +30,7 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <a>
-                <img
+                <Image
                   src="/images/headerImage.jpg"
                   alt={name}
                   className={styles.headerImage}
